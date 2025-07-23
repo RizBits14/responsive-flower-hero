@@ -115,10 +115,10 @@ body{
     font-weight: bold;
 }
 
-.trusted-badge {
+.trusted-badge{
     position: absolute;
-    right: 600px; /* Adjust as needed */
-    top: -120px;   /* Adjust as needed */
+    right: 600px;
+    top: -120px;   
     width: 286px;
     height: 286px;
 }
@@ -243,6 +243,7 @@ body{
     .main-body3-title{
         font-size: 24px;
         font-weight: bold;
+        margin-top: -40px;
     }
 
     .main-body3-description{
