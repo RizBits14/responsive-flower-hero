@@ -1,10 +1,10 @@
 /* Base styles */
-body {
+body{
     background-color: #F5F8FF;
 }
 
 /* Shared styles */
-.primary-color {
+.primary-color{
     color: #E95A08;
 }
 
@@ -13,28 +13,36 @@ body {
     opacity: 0.5;
 }
 
-.primary-font {
+.primary-font{
     font-family: 'Noto Serif', serif;
 }
 
-.secondary-font {
+.secondary-font{
     font-family: 'Inter', sans-serif;
 }
 
+.primary-btn{
+    background-color: #E95A08;
+    color: white;
+    padding: 19px 80px 19px 80px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
 /* Navbar styles */
-.navbar {
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 30px 150px 120px 150px;
 }
 
-.md-navbar {
+.md-navbar{
     display: none;
 }
 
 /* Main body 1 styles */
-.main-body1 {
+.main-body1{
     display: flex;
     align-items: center;
     margin-left: 150px;
@@ -43,25 +51,52 @@ body {
     gap: 2rem;
 }
 
-.main-body1-title {
+.main-body1-title{
     font-size: 65px;
     font-weight: bold;
 }
 
-.main-body1-description {
+.main-body1-description{
     font-size: 22px;
     margin-top: 1rem;
 }
 
-.main-body1 img {
+.main-body1 img{
     max-width: 100%;
     height: auto;
+}
+
+/* Main body 2 styles */
+.main-body2{
+    margin: 120px 150px 50px 150px;
+    text-align: center;
+}
+
+.flower-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.flower-name{
+    margin-top: 30px;
+}
+
+.main-body2-images{
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr);
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 84px;
+    row-gap: 30px;
+    column-gap: -20px;
 }
 
 /* Media Query */
 @media screen and (min-width: 393px) and (max-width: 640px) {
     /* Navbar styles */
-    .navbar {
+    .navbar{
         margin: 16px 28px;
     }
 
@@ -70,7 +105,7 @@ body {
         height: 38px;
     }
 
-    .md-navbar {
+    .md-navbar{
         margin: 0;
         display: flex;
         justify-content: space-between;
@@ -78,16 +113,15 @@ body {
     }
 
     /* Main body 1 styles */
-    .main-body1 {
+    .main-body1{
         display: flex;
         flex-direction: column-reverse;
         margin: 0 1rem 4rem 1rem;
         gap: 1.75rem;
     }
 
-    .main-body1-styles {
+    .main-body1-styles{
         width: 100%;
-        /* margin: 0px 16px 65px 16px; */
     }
 
     .main-body1-title{
@@ -98,11 +132,63 @@ body {
         font-size: 14px;
     }
 
-    .main-body1 img {
+    .main-body1 img{
         width: 100%;
         height: auto;
         margin: 28px 16px 0 16px;
     }
 
+    /* Main body 2 styles */
+    .main-body2{
+    margin: 65px 16px 16px 28px;
+    text-align: center;
+    }
+
+    .flower-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+    .main-body2-images{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 28px;
+    }
+
+    .main-body2-title{
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .main-body2-description{
+        font-size: 14px;
+    }
+
+    .primary-btn{
+    background-color: #E95A08;
+    color: white;
+    padding: 19px 30px 19px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    } 
     
+    .flower-name{
+        font-size:16px;
+        margin-top: 30px;
+        
+    }
+
+    .flower-price{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    
+    .main-body2-description{
+        margin-left: 28px;
+        margin-right: 28px;
+    }
 }
