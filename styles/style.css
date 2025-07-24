@@ -405,11 +405,13 @@ footer{
         font-weight: bold;
         margin-top: 0;
         line-height: 1.2;
+        margin-bottom: 16px;
     }
 
     .main-body3-description{
         font-size: 16px;
         line-height: 1.5;
+        margin-bottom: 143px;
     }
 
     /* main body 4 styles */
