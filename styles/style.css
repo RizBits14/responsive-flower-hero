@@ -280,7 +280,7 @@ footer{
 
 
 /* Media Query */
-@media screen and (min-width: 393px) and (max-width: 640px) {  
+@media screen and (min-width: 393px) and (max-width: 768px) {  
     /* Navbar styles */
     .navbar{
         margin: 16px 28px;
@@ -325,7 +325,6 @@ footer{
     .main-body1 img{
         width: 100%;
         height: auto;
-        /* margin: 0 0 0 0; */
     }
 
     /* Main body 2 styles */
