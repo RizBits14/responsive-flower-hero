@@ -1,6 +1,8 @@
 /* Base styles */
 body{
     background-color: #F5F8FF;
+    margin: 0;
+    padding: 0;
 }
 
 /* Shared styles */
@@ -238,6 +240,41 @@ body{
     background-color: white;
 }
 
+/* Footer styles */
+footer{
+    margin: 50px 160px 0 160px;
+}
+
+.footer-container{
+    display: flex;
+    align-items: flex-start;
+    gap: 110px;
+}
+
+.footer-left{
+    width: 360px;
+    height: auto;
+}
+
+.footer-left img{
+    margin-bottom: 16px;
+}
+
+.footer-content{
+    display: flex;
+    gap: 110px;
+}
+
+.footer-content ul li{
+    margin-bottom: 32px;
+}
+
+.social-icon{
+    display: flex;
+    gap: 24px;
+}
+
+
 /* Media Query */
 @media screen and (min-width: 393px) and (max-width: 640px) {
     /* Navbar styles */
@@ -324,8 +361,7 @@ body{
     
     .flower-name{
         font-size:16px;
-        margin-top: 30px;
-        
+        margin-top: 30px;   
     }
 
     .flower-price{
@@ -406,9 +442,7 @@ body{
 
     /* Main body 5 styles */
     .main-body5{
-        margin-top: 40px;
-        
-        
+        margin-top: 40px;    
     }
 
     .main-body5-title{
@@ -425,6 +459,32 @@ body{
 
     .secondary-btn {
         padding: 0 25px;
+    }
+
+    /* Footer styles */
+    footer{
+        margin: 50px 14px 50px 20px
+    }
+
+    .footer-container{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: unset;
+    }
+
+    .footer-left img{
+        width: 180px;
+        height: 109px;
+    }
+
+    .footer-description{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        gap: unset;
     }
 
 }
