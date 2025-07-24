@@ -123,7 +123,77 @@ body{
     height: 286px;
 }
 
+/* Main body 4 styles */
+.main-body4{
+    margin-top: 140px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+}
 
+.main-body4-description{
+    margin-top: 16px;
+    margin-bottom: 120px;
+    padding-left: 276px;
+    padding-right: 276px;
+}
+
+.flower-grid-container{
+    display: grid;
+    grid-template-columns: 1.3fr 2.3fr;
+    grid-template-rows: 300px 300px;
+    row-gap: 25px;
+    column-gap: 28px;
+}
+
+.grid-item{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.image-color{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bloom{
+    background-image: url('../assets/deal-bloom.png'); 
+    background-repeat: no-repeat;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border-radius: 10px;
+}
+
+.ana{
+    background-image: url('../assets/deal-ana.png'); 
+    background-repeat: no-repeat;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    border-radius: 10px;
+}
+
+.zabo{
+    background-image: url('../assets/deal-zabo.png'); 
+    background-repeat: no-repeat;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    border-radius: 22px;
+}
+
+.image-text{
+    position: relative;
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+}
 
 /* Media Query */
 @media screen and (min-width: 393px) and (max-width: 640px) {
@@ -172,23 +242,23 @@ body{
 
     /* Main body 2 styles */
     .main-body2{
-    margin: 65px 16px 16px 28px;
-    text-align: center;
+        margin: 65px 16px 16px 28px;
+        text-align: center;
     }
 
     .flower-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .main-body2-images{
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-bottom: 28px;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 28px;
     }
 
     .main-body2-title{
@@ -201,11 +271,11 @@ body{
     }
 
     .primary-btn{
-    background-color: #E95A08;
-    color: white;
-    padding: 19px 30px 19px 30px;
-    font-size: 16px;
-    font-weight: 600;
+        background-color: #E95A08;
+        color: white;
+        padding: 19px 30px 19px 30px;
+        font-size: 16px;
+        font-weight: 600;
     } 
     
     .flower-name{
@@ -249,4 +319,45 @@ body{
     .main-body3-description{
         font-size: 14px;
     }
+
+    /* main body 4 styles */
+    .main-body4{
+        margin-top: 140px;
+        margin-left: 15px;
+        margin-right: 15px;
+        text-align: center;
+    }
+
+    .main-body4-title{
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .main-body4-description{
+        margin-top: 14px;
+        margin-bottom: 50px;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .flower-grid-container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .zabo, .bloom, .ana{
+        border-radius: 14px;
+    }
+
+    .image-text{
+        font-size: 20px;
+        padding: 65px 45px;
+    }
+
+    .image-text-title{
+        margin-bottom: 10px;
+    }
+
 }
