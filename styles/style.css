@@ -29,6 +29,14 @@ body{
     font-weight: 600;
 }
 
+.secondary-btn{
+    background-color: #E95A08;
+    color: white;
+    padding: 19px 53px 19px 53px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
 /* Navbar styles */
 .navbar{
     display: flex;
@@ -195,6 +203,41 @@ body{
     z-index: 2;
 }
 
+/* Main body 5 styles */
+.main-body5{
+    margin-top: 120px;
+    background-image: url(../assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.main-body5-styles{
+    text-align: center;
+    align-items: center;
+}
+
+.main-body5-title{
+    margin-bottom: 23px;
+    padding: 200px 420px 23px 420px;
+}
+
+.button-container{
+    display: flex;
+    padding: 0 305px 190px 305px;
+    justify-content: center;
+}
+
+.main-body5-email-box{
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: white;
+}
+
 /* Media Query */
 @media screen and (min-width: 393px) and (max-width: 640px) {
     /* Navbar styles */
@@ -259,6 +302,7 @@ body{
         margin-right: 15px;
         margin-left: 15px;
         margin-bottom: 28px;
+        gap: 20px;
     }
 
     .main-body2-title{
@@ -358,6 +402,29 @@ body{
 
     .image-text-title{
         margin-bottom: 10px;
+    }
+
+    /* Main body 5 styles */
+    .main-body5{
+        margin-top: 40px;
+        
+        
+    }
+
+    .main-body5-title{
+        font-size: 20px;
+        margin-bottom: 10px;
+        padding: 110px 80px 23px 80px;
+    }
+
+    .button-container{
+        padding: 0 36px 65px 36px;
+        align-items: stretch;
+        max-width: 640px;
+    }
+
+    .secondary-btn {
+        padding: 0 25px;
     }
 
 }
