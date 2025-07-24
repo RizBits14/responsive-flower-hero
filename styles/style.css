@@ -279,11 +279,11 @@ footer{
 }
 
 
-/* Media Query */
-@media screen and (min-width: 393px) and (max-width: 768px) {  
+/* Media Queries */
+@media screen and (max-width: 768px) {  
     /* Navbar styles */
     .navbar{
-        margin: 16px 28px;
+        margin: 16px 20px;
     }
 
     .logo{
@@ -311,25 +311,28 @@ footer{
     }
 
     .main-body1-title{
-        font-size: 24px;
-        margin-left: 16px;
-        margin-right: 16px;
+        font-size: 28px;
+        margin-left: 20px;
+        margin-right: 20px;
+        line-height: 1.2;
     }
 
     .main-body1-description{
-        font-size: 14px;
-        margin-left: 16px;
-        margin-right: 16px;
+        font-size: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+        line-height: 1.5;
     }
 
     .main-body1 img{
         width: 100%;
         height: auto;
+        max-width: 100%;
     }
 
     /* Main body 2 styles */
     .main-body2{
-        margin: 65px 16px 16px 28px;
+        margin: 65px 20px 16px 20px;
         text-align: center;
     }
 
@@ -342,49 +345,49 @@ footer{
 
     .main-body2-images{
         display: grid;
-        grid-template-columns: repeat(2, 2fr);
-        margin-right: 15px;
-        margin-left: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 20px;
+        margin-left: 20px;
         margin-bottom: 28px;
-        gap: 20px;
+        gap: 15px;
     }
 
     .main-body2-title{
-        font-size: 24px;
+        font-size: 28px;
         margin-bottom: 16px;
     }
 
     .main-body2-description{
-        font-size: 14px;
+        font-size: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+        line-height: 1.5;
     }
 
     .primary-btn{
         background-color: #E95A08;
         color: white;
-        padding: 19px 30px 19px 30px;
-        font-size: 16px;
+        padding: 15px 25px;
+        font-size: 14px;
         font-weight: 600;
+        width: 100%;
+        max-width: 200px;
     } 
     
     .flower-name{
-        font-size:16px;
-        margin-top: 30px;   
+        font-size: 18px;
+        margin-top: 20px;   
     }
 
     .flower-price{
-        font-size: 16px;
-        margin-bottom: 30px;
-    }
-    
-    .main-body2-description{
-        margin-left: 28px;
-        margin-right: 28px;
+        font-size: 18px;
+        margin-bottom: 20px;
     }
 
     /* Main body 3 style */
     .main-body3{
         flex-direction: column;
-        margin: 65px 16px 0 16px;
+        margin: 65px 20px 0 20px;
         gap: 1.75rem;
     }
 
@@ -398,49 +401,55 @@ footer{
     }
 
     .main-body3-title{
-        font-size: 24px;
+        font-size: 28px;
         font-weight: bold;
-        margin-top: -40px;
+        margin-top: 0;
+        line-height: 1.2;
     }
 
     .main-body3-description{
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 1.5;
     }
 
     /* main body 4 styles */
     .main-body4{
-        margin-top: 140px;
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-top: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
         text-align: center;
     }
 
     .main-body4-title{
-        font-size: 24px;
+        font-size: 28px;
         font-weight: bold;
     }
 
     .main-body4-description{
         margin-top: 14px;
-        margin-bottom: 50px;
-        padding-left: 28px;
-        padding-right: 28px;
+        margin-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+        line-height: 1.5;
     }
 
     .flower-grid-container{
         display: flex;
         flex-direction: column;
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 20px;
     }
 
     .zabo, .bloom, .ana{
         border-radius: 14px;
+        min-height: 200px;
     }
 
     .image-text{
-        font-size: 20px;
-        padding: 65px 45px;
+        font-size: 18px;
+        padding: 40px 30px;
     }
 
     .image-text-title{
@@ -449,49 +458,84 @@ footer{
 
     /* Main body 5 styles */
     .main-body5{
-        margin-top: 40px;    
+        margin-top: 60px;    
     }
 
     .main-body5-title{
-        font-size: 20px;
-        margin-bottom: 10px;
-        padding: 110px 80px 23px 80px;
+        font-size: 24px;
+        margin-bottom: 20px;
+        padding: 80px 30px 23px 30px;
+        line-height: 1.2;
     }
 
     .button-container{
-        padding: 0 36px 65px 36px;
-        align-items: stretch;
-        max-width: 640px;
+        padding: 0 30px 80px 30px;
+        flex-direction: row;
+        gap: 0px;
+    }
+
+    .main-body5-email-box{
+        padding: 15px;
+        font-size: 16px;
+        width: 100%;
     }
 
     .secondary-btn{
-        padding: 0 25px;
+        padding: 15px 30px;
+        width: auto;
+        font-size: 16px;
     }
 
     /* Footer styles */
     footer{
-        margin: 50px 14px 50px 20px
+        margin: 50px 20px 30px 20px;
     }
 
     .footer-container{
         flex-direction: column;
         align-items: flex-start;
-        gap: unset;
+        gap: 30px;
+    }
+
+    .footer-left{
+        width: 100%;
     }
 
     .footer-left img{
-        width: 180px;
-        height: 109px;
+        width: 150px;
+        height: auto;
+        margin-bottom: 20px;
     }
 
     .footer-description{
         font-size: 16px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        line-height: 1.5;
     }
 
     .footer-content{
         flex-direction: column;
-        gap: unset;
+        gap: 0px;
+        width: 100%;
     }
 
+    .footer-content ul{
+        margin-bottom: 20px;
+    }
+
+    .footer-content ul li{
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .social-icon{
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .social-icon img{
+        width: 32px;
+        height: 32px;
+    }
 }
