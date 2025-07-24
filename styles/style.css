@@ -215,7 +215,7 @@ body{
     background-image: url(../assets/news-letter-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    background-position: center;
 }
 
 .main-body5-styles{
@@ -461,7 +461,7 @@ footer{
         max-width: 640px;
     }
 
-    .secondary-btn {
+    .secondary-btn{
         padding: 0 25px;
     }
 
